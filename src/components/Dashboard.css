@@ -1,0 +1,71 @@
+.dashboard-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 16px;
+    width: calc(33.33% - 20px);
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .card.full-width {
+    width: 100%;
+  }
+  
+  .stat {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .bus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  
+  .bus-card {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+    background: #f9f9f9;
+  }
+  
+  .bus-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  .badge {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  .badge.green { background: #4CAF50; }
+  .badge.yellow { background: #FFC107; }
+  .badge.red { background: #F44336; }
+  
+  .skeleton {
+    background: #eee;
+    border-radius: 8px;
+  }
+  
+  .skeleton-large {
+    height: 150px;
+    width: 100%;
+  }
+  
+  .skeleton-chart {
+    height: 300px;
+    width: 100%;
+  }
+  
